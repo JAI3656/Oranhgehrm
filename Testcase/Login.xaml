@@ -1,0 +1,135 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Login" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="667,1135" sap2010:WorkflowViewState.IdRef="Login_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="32">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="28">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Login" sap:VirtualizedContainerService.HintSize="476,1070" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: OrangeHRM" sap:VirtualizedContainerService.HintSize="434,978" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="85af3bc1-b6e2-4216-b319-7da1856cbfd7" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,762" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="email">
+                <Variable.Default>
+                  <Literal x:TypeArguments="x:String">Admin</Literal>
+                </Variable.Default>
+              </Variable>
+              <Variable x:TypeArguments="x:String" Name="password">
+                <Variable.Default>
+                  <Literal x:TypeArguments="x:String">admin123</Literal>
+                </Variable.Default>
+              </Variable>
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Username'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="85af3bc1-b6e2-4216-b319-7da1856cbfd7" Text="[email]" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login" DesignTimeRectangle="321, 449, 460, 45" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl name='username' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl name='username' tag='INPUT' type='' class='oxd-input oxd-input--focus' aaname='' /&gt;" Guid="19adc64b-cb11-4f86-83ba-9d5ab1fa4720" ImageBase64="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" InformativeScreenshot="ef43635d9bce9307f94c77f3845c585e.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='OrangeHRM' /&gt;" SearchSteps="Selector, Image" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="341, 427, 55, 16" ElementType="Text" FriendlyName="'Username'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='oxd-label' aaname='Username' check:innerText='Username' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADsAAAAUCAYAAAAz30VQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKISURBVFhH7ZTRaxpBEMbzv96LL30RSQhVyoGIGGKUcKUGChEucAGRgAZBg6FXilY0D4dEJLbE0hpEC4fYEBT9OrO7GrUv5rHGDwR3Z3ZmfzOzt4NXpC3spmoLu6l6vbC1ZAT+fFetZnJgeBPIrm7/h9rCLmsBdtJH2UrA44tA80Wxd2KjM2GfMdqfTHh3ad8bgXe+30U2HIGRsxHTyZZ0ZI60DTMSFb6ecAbOI/sCbj2DUFDua7sGYp9/SYNjQSO/rGXAw2f0FMo/KjA4Juf7UEJHegKD23lsbT8BszFUhpfC1lPQ9AxaDDJ5QrvqiCQjusybcA7tMfsT+GVCxZGw2mEOjd4QI9rhHFrwAs6AFlS87FEE+lWfDxJtF50n+Re9a+g+CzXOxbB0h/RPTjCE/Z5iBMjGRXqsIEaFP23yIc4XhVF1eUHgNzDYTxT+pbBuCQf7cYRSNpz7PkYqiHMmK7z0oy7OYGNfZwQyx15OdYwk4IUv8Od7AbFwXE6OiKPyMmyoMO/e4pn59PCSC7R6j1kM0j+w3ou2Wil1C/B7P6LInWCNXbTqNs5PaJwDKTjEIWDPbpXDohYuorRa0OeLU5cPyXbZlkUc2AgtwobXhaUzPWlZ1RLsqGrSeJiwe2IeBVg5GYd2bEMMRreJ2oPq0uQbTF2Ojzj31kRRnRv1SrDnY7UurIviMdlU1zv5xHJn14FFG+dBipFuwhVPzUWjJJ8aawlWvLcvFvQABeMREB+hAlrqAzK6v0Zs9gEhm99yZBHoHbXyJvb25TlP0ET6ji0vgSU92Dh4J2OHrgrPz2dtWNLvG5weRcWHTNuNQrcq6KjercButrawm6ot7KZqZzqd4nX8pvgLoul3lxhXXFMAAAAASUVORK5CYII=" SearchSteps="Selector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="85af3bc1-b6e2-4216-b319-7da1856cbfd7" Text="[password]" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login" DesignTimeRectangle="321, 534, 460, 45" ElementType="InputBoxPassword" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' class='oxd-input oxd-input--active' aaname='' /&gt;" Guid="ebfa1ecf-3155-4435-ae61-dc67f74c00ea" ImageBase64="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" InformativeScreenshot="325f6aaaa05623f268b22367ec7972b1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='OrangeHRM' /&gt;" SearchSteps="Selector" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="341, 512, 54, 16" ElementType="Text" FriendlyName="'Password'" FullSelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' type='' class='oxd-label' check:innerText='Password' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAAUCAYAAADcHS5uAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKLSURBVFhH7ZTfS9tQFMf3v/alL3kJRRmmjIJIiawaxIFCQSGDKKEUEpCqFFYf2o3Vh1AMgSp2+ANpH/JgS0iR785JbkpEnOvYi22/EMg99yb3fu75nvMBc6IF6KxpATprmk/Q9r6KjJx6ciUoxjn6T2LBu5GDbXkH9oMYkl6AKsep2XEPlaKKwreBCLwXTQtKujveQWbfiaDr+2VIS3G2s6oFZxSvGV6dYLMg4vkydPcxivfPTSgfRXxVR/1+gNpG+uICtMoqpENPjIFuVYNkXETvL7+PwsRhIFO0UDN3kM3FQHdnOmQ+G7lwzbKwPhVokM5ogP69jzCaGMP5SraO1g5gf1ax3ozhQt9Bywvo7QK7OQ36VRRG+OscbVoeftfpkCe442DwA5t8uJUqnKg8POytaDi4pteHEygEUbkZ8wT8nwakfBUur2NQWcNm8xZD3urmCMsE9mztW6BRbSbPUgmFpEafBmgZZcj51DxnmuSaGrJFA3bTQ28Ub8YXUP9SgqzRzXcu0ecDsRhOZIGhJaMJe6OEPZfmvCqk1SP06LV/Sk7aasCPPmKxHcUlMGjhCN144pW1U1p3oo5JN2+g4ccg7mFpAsoK7z00jk2sfSIHnCb/GMO/dlCzdChLGnY7MS3vs2xdoL4VA/pnVBJkV8dIXPIXoIkrSP8XlG+bQFtclyP6EWc2Ag3Q7XgQ/Bg298SmD3CdW4SiY3crVHtJLbr0rzyNybKcyDjLPC6jlpz2LeumQP/Juq+C4hEOFz9ZNlswYVdEkyKkNll60qQKOuxryhzVt727Tc1CxFUT7cmV93BAzWvZYpOy4qb0PCtvNaMUKCndjBSz+udmNMtagM6aFqCzpjkBBX4DNbQpl6Wr1XoAAAAASUVORK5CYII=" SearchSteps="Selector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Login'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="85af3bc1-b6e2-4216-b319-7da1856cbfd7" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login" DesignTimeRectangle="321, 611, 460, 46" ElementType="Button" FriendlyName="'Login'" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='oxd-button oxd-button--medium oxd-button--main orangehrm-login-button' aaname=' Login ' check:innerText='Login' /&gt;" Guid="e2e1428d-9568-409e-9084-0c155fcbefe6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAdAAAAAyCAYAAADspoo9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAR/SURBVHhe7d2/bxNnHAdg8gewszd/Bc2asUy0GwNTxIBUKnXohjqhSHQIG0MGGFAHutAJqQipEl2QOkQIRQxhaoaoypAhPxz77X3j2JyT1+cfOadJ7vlIj4S5O9sZTh/f3XvvXUsiIiIycRSoiIjIFKmtQLe3OumPXw/Tyg+t9P3ifvruq720eH0vLcztpq+vAcD5ie6JDoouik6KboqOiq6qK2cu0N9XD4++XO4PAICLJjoruuusmbpAnz9qpVs39rJfDgAuuuiw6LJpM3GBxiFwHBLnvgwAXDbRadFtk2aiAl1eOsh+OABcdtFxk2SsAt383ElLN13nBOBqi66LzhsnIwt040PHKVsAGiM6L7pvVCoLNFpYeQLQNNF9o45EKwvUaVsAmio6sCpDC9SAIQCarmpgUbZAYzhv7o0AoGmG3eKSLVDXPQGgKzoxl1MFGrMy5N4AAJoqN2PRqQI1PR8ADIpuPJmBAo3JdXMbAkDTnZyAfqBAPVUFAPKiI8vpF2g8Iy23AQDQVX6eaL9A3boCNVuNHa2T3j/ILKvBq4+x53bSq8wyYDbKt7T0CzSe1p1bGZjSjAv07jcH6eGd/XQ3swyYjejKXvoF6von1GzGBQqcv/J10H6BmjwBajaqQOcP0ss/O2m/94N2u1h3+csP2dv3DtPG1vGyVietrxSvi39urHaXP3lTvP92Oz2J9R+000581rN2+menu0na6aR3P9qvoU7lSRX6Bbp43Y4Gtaos0L304u9i8W6xfCVOxRZl+ldp/flWWt8tXm6108v7xfL7h2lts3hdZHiBFilK+PVP3fXXt4vXm+30cOBzgbOIruylX6ALc/mVgSlVFmj3aHLnTXnsQSutFS149H9PM9v+3E5x8qiqQDdWv/wQPlpevIdBRlCf6MpeFCjMyhgF2ivDrlZ6H0eNHw/72w6W3xincEufpUChftkCdQoXanbuR6AKFGYtewrXICKo2XGBri13r3H2fbufbpeugb6Na5a1XANVoDBr2UFEbmOBmh0VaCa90pvFKFwFCjOVvY3FRApwwd1pp3+LfXX9l8wy4FxkJ1IwlR9cJAfp3afiqPO3Vnp8dOq3ld5+KnbU3XZ6MZ9bHzgP2an8TCYPF8l+evysOOKMUbnH2S/20df3jFWA/1N2MvmI66AAkFe+/hkZKFAP1AaAvMoHakdu3XCKCADKohtP5lSBPn9kNC4AlEU3nsypAo2YVAEAusqTJ5STLVC3tABAV/nWlXKyBRpZXjrIvhEANEV04bAMLdDI0k23tQDQTNGBVaks0M3PHddDAWic6L7owKpUFmhk44MSBaA5ovOi+0ZlZIFGooWdzgXgqouuG3Xk2ctYBdqLgUUAXFVVA4ZymahAIzGc1yldAK6K6LRht6pUZeIC7SVmZTDtHwCXVXRYboahcTN1gfYSk+t6igsAl0V01smJ4afJmQu0l3hGWhwCx9O648vFIfHi9b20MJf/AwBgVqJ7ooOii6KTopuio8rP8zxraitQERGRJkWBioiITJyU/gM/zB2mJ1GM1AAAAABJRU5ErkJggg==" InformativeScreenshot="7d3e53f74157a50f1da8dc99cd7b2b5e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='OrangeHRM' /&gt;" SearchSteps="Selector, Image" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGAUExURf///v759eh8Hv77+Prl0/fRsORpAOd5GP/+/f748/3+/fG1f/K0f+yZUOqMPORlAPjZved6GU2xdeZwCQCKL/738TCmYud1Ev328P3y6azbwPCrbvjVtu6fW/779/72777jzd6qbf327yCcUv307edzEOmEK+mAJP7fyZHQrvHu4cTl0v3z6/K2gvO6iPzw5v/8+fz+/fGudPzl0vK5hvzs3uZxC++kY+d5Gfzt4eRnAORoAE6ydxCXR/CoafjWuf77+eRmAPCpbO6iYfzv5Mnm1SeeVN/y6Od+IWS6hO6dViWkX++lY53YuyedU/CmaO6fWv748uNoAPv9+/rjz++jX/bNqfTEmff8+fzu4fXHoPnexgCILvrizeZyDTSmY/jYvOZwCla0fPCqbffTs7Pexe2aUf///////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOlg/doAAABpdFJOU///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AKA3ZhoAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC3SURBVChTY8iAg/QMQyAJFwiW8hRS1kYSSBKJt/UD0jABVzdNsRgFIAMqkJ6RauPtmw4TkA/JSNdS9AExwQL2TGmhGaIZxl7+zGABlkQZIBGWkcERIA0W4HUGGgEGLhaRQAFG8SgINyNDjj0FpILJHKIASMYlgAT02FghetKTzcBmqHgIh2ekp2cE8gQZpYMEMmLZrdScdO3U+fmAHJBAhqWsqrUjmyA3SCdYICNDXyAjGsTNyAAAT09UkZxCysoAAAAASUVORK5CYII=" InformativeScreenshot="c3277b25db7d581dc50dd6d98a0addca.png" Selector="&lt;html app='chrome.exe' title='OrangeHRM' /&gt;" Url="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
