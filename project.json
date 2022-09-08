@@ -3,18 +3,25 @@
   "description": "Test Automation Project",
   "main": "Main.xaml",
   "dependencies": {
+    "UiPath.DataService.Activities": "[21.10.1]",
     "UiPath.System.Activities": "[22.4.4]",
     "UiPath.Testing.Activities": "[22.4.3]",
     "UiPath.UIAutomation.Activities": "[22.4.7]"
   },
   "webServices": [],
-  "entitiesStores": [],
+  "entitiesStores": [
+    {
+      "serviceDocument": ".entities/EntitiesStore.json",
+      "tenantName": "Test",
+      "namespace": "Orangehrm",
+      "uniqueReference": "xq0OTTIZcqiAinCHgGV0tG6xTV7U3/jKGZlnUE+rx/8="
+    }
+  ],
   "schemaVersion": "4.0",
   "studioVersion": "22.4.4.0",
   "projectVersion": "1.0.3",
   "runtimeOptions": {
     "autoDispose": false,
-    "netFrameworkLazyLoading": false,
     "isPausable": true,
     "isAttended": false,
     "requiresUserInteraction": true,
@@ -42,13 +49,11 @@
       {
         "editingStatus": "InProgress",
         "testCaseId": "fca6aa23-5fae-4afd-8a31-0a98afeb925e",
-        "testCaseType": "TestCase",
         "fileName": "TestCase.xaml"
       },
       {
         "editingStatus": "Publishable",
         "testCaseId": "f4a667a3-4149-40bf-80aa-90b27f260458",
-        "testCaseType": "TestCase",
         "fileName": "Testcase\\Login.xaml"
       }
     ],
